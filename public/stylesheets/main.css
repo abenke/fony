@@ -1,0 +1,235 @@
+body{
+  font-family: Helvectica, sans-serif;
+  background: #005474 url('/images/nyc-bg.jpg') fixed no-repeat;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+input.button { padding-bottom: 3px; margin-right: 10px; text-align: center; font-size: 12px; font-weight: bold; line-height: 20px; width: 100px; height: 25px; overflow: hidden; border: 0px none; background: white url('/images/buttons.png'); color: black; }
+input.button:hover { background-position: 0 25px; cursor: pointer; }
+
+a{
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #88C5F0;
+}
+a:hover{
+  color: #005474;
+}
+.error { color: red; }
+h2 { 
+  font-size: 20px;
+  font-weight: normal;
+  color: #89b876;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: 1px solid #c0e9af;
+  padding-bottom: 5px;
+  margin-top: 18px;
+}
+h3 { 
+  font-size: 14px;
+  font-weight: normal;
+  color: #c0e9af;
+  padding-top: 10px;
+}
+
+ul{
+  list-style-type: square;
+  padding-left: 15px;
+}
+
+#hd{
+  float: left;
+  border-bottom: 1px solid #5C828A; /*#005474;*/
+  width: 100%;
+}
+#header-wrap{
+  margin: 5px auto;
+  width: 800px;
+}
+#hd h1 a{
+  background: url(/images/faceofnyc-title3.png) no-repeat;
+  width: 287px;
+  height: 40px;
+  text-indent: -1000px;
+  float: left;
+  display: block;
+  position: relative;
+  overflow:hidden;
+  margin: 40px 0 15px 0;
+  border: none;
+}
+#facebar h1 a{
+  background: url(/images/facebar.png) repeat-x;
+  width: 710px;
+  height: 20px;
+  text-indent: -1000px;
+  float: left;
+  display: block;
+  position: relative;
+  overflow:hidden;
+  /*margin: 10px 0 10px 0;*/
+  border: none;
+}
+#topnav{
+  background: #c0c0c0;
+  border: 1px;
+  float: right;
+  list-style-type: none;
+  margin-top: 3px;
+  margin-right:240px;
+}
+#topnav li{
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#topnav li a.login{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: none;
+}
+#topnav li a.loggedin{
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: none;
+}
+#nav{
+  float: right;
+  list-style-type: none;
+  margin-top: 60px;
+  margin-right:240px;
+}
+#nav li{
+  float: left;
+  margin-left: 15px;
+}
+#nav li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: none;
+}
+.exhibit li.exhibit a{ color: #89b876; }
+.charities li.charities a{ color: #89b876; }
+.about li.about a{ color: #89b876; }
+
+
+
+.right{ 
+  float: right; 
+  margin: 5px 0 10px 10px;
+  border: 1px solid #fff;
+}
+.left{
+  float: left;
+  margin: 5px 10px 10px 0;
+  border: 1px solid #fff;
+}
+
+#content{
+  clear: both;
+  margin: 0 auto;
+  width: 650px;
+  background: url(/images/content-bg.png);
+  padding: 10px 30px 40px 30px;
+}
+#content h2{
+  font-size: 20px;
+  font-weight: normal;
+  color: #A2B9BF;
+  font-family: Arial, "Arial";
+  border-bottom: 1px solid #005474;
+  padding-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+#content h3{
+  font-size: 15px;
+  font-weight: normal;
+  color: #A2B9BF;
+  font-family: Arial, "Arial";
+  border-bottom: 1px solid #005474;
+  padding-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+#content h4{
+  font-size: 15px;
+  font-weight: bold;
+  color: #A2B9BF;
+  font-family: Arial, "Arial";
+}
+#content p{
+  padding-top: 10px;
+ 
+}
+
+#splash p{
+  text-align: center;
+}
+
+#contrib{
+  clear: both;
+  margin: 0 auto;
+  width: 220px;
+  background: url(/images/transparent-bg2.png);
+  padding: 10px 10px 10px 10px;
+}
+#contrib h2{
+  font-size: 20px;
+  font-weight: normal;
+  color: #A2B9BF;
+  font-family: Arial, "Arial";
+  border-bottom: 1px solid #70828A;
+  padding-bottom: 5px;
+  /*margin-top: 5px;*/
+  margin-bottom: 10px
+}
+#contrib img{
+  border: 1px solid #fff;
+  width: 60px;
+  margin: 5px;
+}
+
+#ft{
+  margin-right:240px;
+  padding-bottom: 40px;
+  text-align:right;
+}
+#ft p{
+  font-size: 11px;
+  color: #fff;
+  text-align: right;
+}
+/* Forms */
+
+form.regform { margin: 10px; }
+form.regform p { margin-bottom: 6px; }
+
+/*
+
+.formField label{
+  font-weight: normal;
+}
+input{
+  margin-bottom: 10px;
+  border: 1px solid #2f1b0c;
+  background: #88624c;
+}
+textarea{
+  border: 1px solid #2f1b0c;
+  background: #88624c;
+}
+
+#submitButton{
+  background: #88624c;
+  padding: 5px;
+}
+*/
