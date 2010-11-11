@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe PagesController do
   integrate_views
+  
+  before(:each) do
+    @base_title = "Face of NYC"
+  end
 
   describe "GET 'home'" do
     it "should be successful" do
@@ -10,7 +14,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'home'
-      response.should have_tag("title","Face of NYC | Home")
+      response.should have_tag("title", @base_title + " | Home")
     end
   end
 
@@ -21,7 +25,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'exhibit'
-      response.should have_tag("title","Face of NYC | Exhibit")
+      response.should have_tag("title", @base_title + " | Exhibit")
     end
   end
 
@@ -32,7 +36,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'charities'
-      response.should have_tag("title","Face of NYC | Charities")
+      response.should have_tag("title", @base_title + " | Charities")
     end
   end
 
@@ -43,7 +47,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'about'
-      response.should have_tag("title","Face of NYC | About")
+      response.should have_tag("title", @base_title + " | About")
     end
   end
   
@@ -55,7 +59,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get 'donate'
-      response.should have_tag("title","Face of NYC | Donate")
+      response.should have_tag("title", @base_title + " | Donate")
     end
   end
   
