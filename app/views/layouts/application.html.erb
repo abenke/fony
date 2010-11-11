@@ -4,9 +4,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>
-			Face of NYC | <%= @title%>
+			<%= title %>
 		</title>
-		<link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen" /><!-- Combo-handled YUI CSS files: -->
+		<%= stylesheet_link_tag 'main', :media =>'screen'%>
+		<!-- Combo-handled YUI CSS files: -->
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" />
 	</head>
 	<body>
@@ -75,7 +76,7 @@
 			</div><!-- /bd -->
 			<div id="ft">
 				<p>
-					faceofnyc.org : Powered by django
+					faceofnyc.org : Powered by RoR
 				</p>
 			</div><!-- /ft -->
 		</div><!-- /doc2 -->
