@@ -1,13 +1,13 @@
 <div id="hhd">
 	<ul id="topnav">
 		<li>
-			<%= link_to "Login", "/accounts/login", :class => "login"%> or <%= link_to "Register", "/accounts/register", :class => "login"%>
+			<%= link_to "Login", "/accounts/login", :class => "login"%> or <%= link_to "Join", join_path, :class => "login" %>
 		</li>
 	</ul>
 </div><!-- /hhd -->
 <div id="hd">
 	<h1>
-		<a href="/">FaceofNYC</a>
+		<%= link_to "FaceofNYC", root_path %>
 	</h1>
 	<ul id="nav">
 		<li class="exhibit">

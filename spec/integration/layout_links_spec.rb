@@ -21,8 +21,14 @@ describe "LayoutLinks" do
     response.should render_template('pages/about')
   end
 
-  it "should have an Donate page at '/donate'" do
+  it "should have a Donate page at '/donate'" do
     get '/donate'
     response.should render_template('pages/donate')
   end
+  
+  it "should have a signup page at '/join' " do
+    get '/join'
+    response.should render_template('users/new')
+  end
+  
 end

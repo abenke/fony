@@ -45,4 +45,5 @@ ActionController::Routing::Routes.draw do |map|
   map.about '/about', :controller => 'pages', :action => 'about'
   map.exhibit '/exhibit', :controller => 'pages', :action => 'exhibit'
   map.charities '/charities', :controller => 'pages', :action => 'charities'
+  map.join '/join', :controller => 'users', :action => 'new'
 end
